@@ -103,23 +103,22 @@
 }
 
 .second-hero-container {
-  height: 100vh;
-  width: 100vw;
-  padding: 0 10px;
+  width: 100%;
+  padding: 20px;
 }
 
-.second-hero-title-area {
+.title-area {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.second-hero-title {
+.title {
   font-size: 125%;
   padding: 20px 0;
 }
 
-.second-hero-title-area .line-breaker {
+.title-area .line-breaker {
   height: 2px;
   width: 100px;
   margin-bottom: 20px;
@@ -132,7 +131,7 @@
 }
 
 .details-block {
-  padding: 25px;
+  padding: 40px;
 }
 
 .details-icon .ion-ios-infinite-outline,
@@ -143,11 +142,105 @@
   font-size: 300%;
 }
 
-.details-title {
-  padding: 10px 0;
+.details-description {
+  padding: 8px 0;
 }
 
-.third-hero-container {
-  height: 100vh;
-  width: 100vw;
+.food-grid-area {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.food-grid-area .grid-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.food-grid-area .grid-block .grid-img {
+  height: 120%;
+  width: 120%;
+  filter: brightness(0.8);
+  object-fit: cover;
+}
+
+.food-grid-area .grid-block .grid-img:hover {
+  filter: brightness(1);
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.mobile-introduction-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-img-block {
+  height: 520px;
+  width: 250px;
+}
+
+.mobile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.description {
+  width: 100%;
+  padding: 20px;
+}
+
+.description-item {
+  display: flex;
+  padding: 5px;
+}
+
+.description-item-icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.description-item-icon p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e67e22;
+}
+
+.description-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.market {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.market-item {
+  width: 180px;
+  height: 50px;
+}
+
+.market-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
