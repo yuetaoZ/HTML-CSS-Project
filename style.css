@@ -1,1 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.mobile-nav {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.burger-container {
+  padding: 30px;
+}
+
+.burger-item {
+  height: 5px;
+  width: 25px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-background {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-background-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 75px;
+  width: 75px;
+}
+
+.hero-logo-img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.hero-text-area {
+  color: white;
+}
+
+.hero-button-area {
+  display: flex;
+}
+
+.hero-button {
+  height: 30px;
+  width: 100px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-hero-button {
+  background-color: #e67e22;
+  color: white;
+}
+
+.first-hero-button:hover {
+  filter: brightness(0.8);
+}
+
+.second-hero-button {
+  width: 130px;
+  margin-left: 10px;
+  background-color: transparent;
+  color: #cf6d17;
+  border: 1px solid #cf6d17;
+}
+
+.second-hero-button:hover {
+  background-color: #cf6d17;
+  color: white;
+}
