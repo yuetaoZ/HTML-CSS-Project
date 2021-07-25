@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: lato;
+  color: #555;
 }
 
 .mobile-nav {
@@ -61,7 +62,7 @@
   left: 5%;
 }
 
-.hero-text-area {
+.hero-text-area h4 {
   color: white;
 }
 
@@ -105,7 +106,6 @@
   height: 100vh;
   width: 100vw;
   padding: 0 10px;
-  color: #555;
 }
 
 .second-hero-title-area {
@@ -119,7 +119,7 @@
   padding: 20px 0;
 }
 
-.line-breaker {
+.second-hero-title-area .line-breaker {
   height: 2px;
   width: 100px;
   margin-bottom: 20px;
@@ -135,11 +135,19 @@
   padding: 25px;
 }
 
-.details-icon {
+.details-icon .ion-ios-infinite-outline,
+.ion-ios-stopwatch-outline,
+.ion-ios-nutrition-outline,
+.ion-ios-cart-outline {
   color: #e67e22;
   font-size: 300%;
 }
 
 .details-title {
   padding: 10px 0;
+}
+
+.third-hero-container {
+  height: 100vh;
+  width: 100vw;
 }
