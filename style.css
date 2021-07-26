@@ -309,12 +309,12 @@ body {
 }
 
 .review-background {
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -999;
-  height: 100%;
-  width: 100%;
 }
 
 .review-background-img {
@@ -335,7 +335,7 @@ body {
 }
 
 .review-content-item {
-  margin-bottom: 25px;
+  margin: 10px 0;
 }
 
 .review-quote {
@@ -358,4 +358,73 @@ body {
 .review-customer-img {
   height: 100%;
   width: 100%;
+}
+
+.pricing-area {
+  background-color: whitesmoke;
+}
+
+.pricing-content-area {
+  margin: 20px 10px;
+}
+
+.pricing-content-block {
+  margin: 20px 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.pricing-content-tag-block {
+  background-color: white;
+  padding: 5px;
+  margin: 2px;
+}
+
+.pricing-content-tag-price {
+  color: #e67e22;
+  font-size: 200%;
+}
+
+.pricing-content-details-block {
+  background-color: white;
+  padding: 5px;
+  margin: 2px;
+}
+
+.pricing-content-details-block p .ion-checkmark,
+.ion-close {
+  color: #e67e22;
+}
+
+.pricing-content-button-block {
+  background-color: white;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-content-button-premium {
+  height: 40px;
+  width: 200px;
+  background-color: #e67e22;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.pricing-content-button-normal {
+  height: 40px;
+  width: 200px;
+  background-color: transparent;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px;
 }
