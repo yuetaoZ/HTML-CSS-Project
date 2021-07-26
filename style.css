@@ -244,3 +244,55 @@
   height: 100%;
   object-fit: contain;
 }
+
+.location-area {
+  padding: 20px;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.location-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-img-block {
+  height: 100%;
+  width: 100%;
+}
+
+.location-img {
+  height: 100%;
+  width: 100%;
+}
+
+.location-icon {
+  position: relative;
+}
+
+.location-icon .ion-ios-person,
+.ion-ios-star,
+.ion-social-twitter {
+  color: #cf6d17;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.location-content .twitter-link {
+  color: #cf6d17;
+}
+
+.location-details {
+  margin-left: 5px;
+  display: flex;
+}
+
+.location-details p {
+  margin-left: 10px;
+}
