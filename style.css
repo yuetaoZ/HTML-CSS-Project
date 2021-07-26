@@ -118,6 +118,7 @@ body {
 
 .title {
   font-size: 125%;
+  text-align: center;
   padding: 20px 0;
 }
 
@@ -280,7 +281,7 @@ body {
 .location-icon .ion-ios-person,
 .ion-ios-star,
 .ion-social-twitter {
-  color: #cf6d17;
+  color: #e67e22;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -288,7 +289,7 @@ body {
 }
 
 .location-content .twitter-link {
-  color: #cf6d17;
+  color: #e67e22;
 }
 
 .location-details {
@@ -302,11 +303,16 @@ body {
 
 .review-area {
   position: relative;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
 }
 
 .review-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
   height: 100%;
   width: 100%;
 }
@@ -315,22 +321,17 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 
 .review-content-area {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
   color: white;
+  padding: 20px;
 }
 
 .review-content {
   display: flex;
   flex-direction: column;
-  padding: 30px;
 }
 
 .review-content-item {
