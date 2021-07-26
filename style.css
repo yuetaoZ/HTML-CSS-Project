@@ -496,3 +496,31 @@ body {
   border-radius: 20px;
   margin: 10px;
 }
+
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(24, 23, 23);
+  color: #555;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.footer-icon .ion-social-twitter {
+  color: #555;
+  position: inherit;
+}
+
+.footer-icon .ion-social-twitter:hover {
+  color: white;
+  transition: all 0.5s;
+}
+
+footer li:hover {
+  color: white;
+  transition: all 0.5s;
+}
