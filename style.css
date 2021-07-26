@@ -9,12 +9,47 @@ body {
   color: #555;
 }
 
+.nav-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 60px;
+  font-size: 140%;
+}
+
+.desktop-nav ul li {
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.nav-item::after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #e67e22;
+  display: block;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
 .mobile-nav {
   display: block;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 999;
 }
 
 .burger-container {
@@ -35,8 +70,12 @@ body {
 }
 
 .hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
+  z-index: -999;
 }
 
 .hero-background-img {
@@ -47,11 +86,9 @@ body {
 }
 
 .hero-logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
 }
 
 .hero-logo-img {
@@ -382,6 +419,7 @@ body {
 }
 
 .pricing-content-block {
+  width: 100%;
   margin: 20px 0;
   border-radius: 15px;
   overflow: hidden;
@@ -494,7 +532,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 footer {
@@ -508,6 +546,7 @@ footer ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  cursor: pointer;
 }
 
 .footer-icon .ion-social-twitter {
@@ -523,4 +562,52 @@ footer ul {
 footer li:hover {
   color: white;
   transition: all 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .location-content-area {
+    display: flex;
+  }
+
+  .location-content {
+    margin: 10px;
+  }
+
+  .pricing-content-area {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .pricing-content-block {
+    margin: 10px;
+  }
+
+  .review-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero-content {
+    font-size: 200%;
+  }
+
+  .hero-button {
+    height: 60px;
+    width: 250px;
+  }
+
+  .hero-logo {
+    height: 150px;
+    width: 150px;
+    margin: 50px;
+  }
 }
