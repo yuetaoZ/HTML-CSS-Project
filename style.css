@@ -374,6 +374,7 @@ body {
 
 .pricing-area {
   background-color: whitesmoke;
+  padding: 20px 0px;
 }
 
 .pricing-content-area {
@@ -450,4 +451,48 @@ body {
   background-color: #e67e22;
   color: white;
   transition: all 0.5s;
+}
+
+.contact-area {
+  margin: 20px 0;
+}
+.contact-content-area {
+  margin: 0 50px;
+}
+
+.contact-content-area .input-box input {
+  height: 30px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 5px;
+}
+
+.contact-content-area .select-box select {
+  height: 30px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 5px;
+}
+
+.check-box {
+  height: 30px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.message-box {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.send-button {
+  height: 40px;
+  width: 150px;
+  background-color: #e67e22;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px;
 }
